@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The new Homepage</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<!-- Google Analytics code starts here -->
+<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-29848640-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+</script>
+<!-- Google Analytics code ends here -->
+
+</head>
+<body onload="cur=ReadCookie('_no');changeBG();">
+<div class="topbar">
+<div class="fill">
+<div class="container">
+<a class="brand" href="#">The simple Homepage</a>
+<form action="" class="pull-right">
+<ul class="nav">
+<li class="active"><a href="#">Home</a></li>
+<li><a href="games.html">Games</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="http://www.facebook.com/rahul.a.r" target="_blank">Contact</a></li>
+</ul>
+</form>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="content">
+<div class="page-header">
+<h1><small>Created using Bootstrap scripts and stylesheets :)</small></h1>
+</div>
+<div class="row">
+<div class="span10" id="main" style="visibility:visible">
+<a href="http://www.google.co.in" target="_blank" ><img src="images/google_logo.png" border="none" alt="google logo"/></a>
+<form method="get" action="http://www.google.com/search" target="_blank">
+<input type="text" name="q" size="30" maxlength="260" value=""  title="Search Google"/>
+<button class="btn primary small" type="submit" value="Google Search">Google Search</button>
+</form>
+<br />
+<a href="http://www.youtube.com/" target="_blank"><img src="images/youtube_logo.gif" border="none" alt="youtube logo"/></a>
+<form action="http://www.youtube.com/results" method="get" target="_blank">
+<input name="search_query" type="text" maxlength="128" size="30"  title="Search Youtube"/>
+<select name="search_type">
+<option value="">Videos</option>
+<option value="search_users">Channels</option>
+</select>
+<button class="btn primary small" type="submit" value="Search Youtube">Search Youtube</button>
+</form>
+<br />
+<a href="http://www.torrentz.com/" target="_blank"><img src="images/torrentz_logo.png" border="none" alt="torrentz logo"/></a>
+<form action="http://www.torrentz.com/search" method="get" target="_blank">
+<input type="text" name="f" value="" size="30" id="thesearchbox" title="Search Torrentz"/> 
+<button class="btn primary small" type="submit" value="Search Torrentz" id="thesearchbutton">Search Torrentz</button>
+</form>
+<br />
+<a href="http://en.wikipedia.org" target="_blank"><img src="images/Wiki_logo.png" border="none" alt="Wikipedia logo"/></a>
+<form action="http://en.wikipedia.org/w/index.php" id="searchform" target="_blank">
+<input type='hidden' name="title" value="Special:Search"/>
+<div id="simpleSearch">
+<input id="searchInput" name="search" type="text" size="30" title="Search Wikipedia" value="" />
+<button class="btn primary small" id="searchButton" type="submit">Search Wikipedia</button>
+</div>
+</form>
+</div>
+<div class="span4">
+<a href="http://www.facebook.com/home.php?" target="_blank"><img src="images/facebook_logo.png" border="none" alt="facebook logo"></a>
+<a href="http://twitter.com/" target="_blank"><img src="images/twitter_logo.png" border="none" alt="twitter logo"></a>
+<a href="https://plus.google.com/?hl=en" target="_blank"><img src="images/google_plus.png" border="none" alt="google plus logo"></a>
+<a href="http://www.orkut.co.in/Main#Home" target="_blank"><img src="images/orkut_logo.png" border="none" alt="orkut logo"></a><br />
+<a href="https://mail.google.com/mail/?hl=en&shva=1#mbox" target="_blank"><img src="images/gmail_logo.png" border="none" alt="gmail logo"></a>
+<a href="http://www.chess.com/" target="_blank"><img src="images/chess_logo.png" border="none" alt="chess logo"></a>
+<a href="http://www.youtube-mp3.org" target="_blank"><img src="images/you_mp3_logo.png" border="none" alt="Youtube-mp3 logo"></a>
+<a href="https://github.com/rahular" target="_blank"><img src="images/github.png" width="50" height="50" border="none" alt="Github logo"></a>
+<br /><br /><br />
+<div id="wp" style="display:none">
+<p class="small">Enter the full URL.</p><p>(Eg: http://wallpapers.org/img.jpg)</p>
+<input type="text" name="datafile" size="40" value="" id="path"><br /><br />
+<button onclick="parsePath();changeBG();" class="btn primary small" align="center">Change!</button>
+</div><br /><br />
+</div>
+</div>
+</div>
+<a class="btn success" href="old.html">Go to the old Homepage!</a>
+<a class="btn error" href="downloads/homepage.tar.gz">Download the code</a>
+<a class="btn info" id="toggle_btn" href="#">Change Background</a>
+<script>
+	$("#toggle_btn").click(function () {
+	$("#wp").slideToggle("slow");
+	});    
+</script>
+<footer>
+<p>&copy; Rahul A R  2011-2012</p>
+</footer>
+</div> <!-- /container -->
+</body>
+</html>
