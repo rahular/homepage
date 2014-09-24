@@ -43,5 +43,16 @@ padding-left: 19px;
 border-left: 1px solid #eee;
 }
 .topbar .btn {
-border: 0;
+	border: 0;
+}
+.nogap {
+	border: none;
+   border-collapse: collapse;
+}
+.nogap td {
+	border: none;
+   padding:0; margin:0;
+}
+.nogap td img {
+    display:block;
 }
